@@ -12,8 +12,18 @@ jobs:
       - name: Clone repository
         uses: actions/checkout@v2
 
-      - name: Build docs
-        uses: ammaraskar/sphinx-action@master
+      - name: Setup python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10' # Version range or exact version of a Python version to use, using SemVer's version range syntax      - name: Build docs
+
+      - name: Install prereqs
+        run: |
+          pip install sphinx
+
+      - name: Run build
+        run: |
+          make dirhtml
 
       - name: Deploy
         uses: crazy-max/ghaction-github-pages@v2.0.1
