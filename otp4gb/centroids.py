@@ -1,3 +1,8 @@
+"""
+``otp4gb.centroids`` -- Centroid Processing
+--------------------------------------------
+
+"""
 
 import geopandas as gpd
 import pandas as pd

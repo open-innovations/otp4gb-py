@@ -1,3 +1,8 @@
+"""
+``otp4gb.net`` -- Network utilities
+--------------------------------------------
+"""
+
 import urllib.request
 
 

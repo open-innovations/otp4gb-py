@@ -1,3 +1,8 @@
+"""
+``otp4gb.geo`` -- Geographic Operations
+--------------------------------------------
+
+"""
 import geopandas as gpd
 import json
 from geojson_rewind import rewind

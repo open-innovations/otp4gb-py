@@ -1,3 +1,8 @@
+"""
+``otp4gb.logging`` -- Common logging config
+--------------------------------------------
+"""
+
 import logging
 import os
 import sys

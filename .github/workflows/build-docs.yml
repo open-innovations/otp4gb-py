@@ -1,0 +1,26 @@
+name: Build and publish docs
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v2
+
+      - name: Build docs
+        uses: ammaraskar/sphinx-action@master
+        with:
+          docs-folder: "docs/"
+          build-command: "make dirhtml"
+
+      - name: Deploy
+        uses: crazy-max/ghaction-github-pages@v2.0.1
+        with:
+          build_dir: build/dirhtml
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

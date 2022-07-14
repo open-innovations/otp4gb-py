@@ -1,3 +1,7 @@
+"""
+``otp4gb.gtfs_filter`` -- Invoke ``gtfs_filter``
+---------------------------------------------------
+"""
 import logging
 import operator
 import os

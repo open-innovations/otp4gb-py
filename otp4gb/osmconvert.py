@@ -1,3 +1,8 @@
+"""
+``otp4gb.osmconvert`` -- Invoke ``osmconvert``
+---------------------------------------------
+"""
+
 import logging
 import operator
 import os

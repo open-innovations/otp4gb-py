@@ -1,3 +1,7 @@
+"""
+``otp4gb.otp`` -- Invoke ``otp``
+---------------------------------------------
+"""
 import atexit
 import logging
 import os

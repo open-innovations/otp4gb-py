@@ -1,3 +1,7 @@
+"""
+``otp4gb.batch`` -- Batch Operations
+--------------------------------------------
+"""
 import logging
 import operator
 import os

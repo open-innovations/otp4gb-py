@@ -1,3 +1,7 @@
+"""
+``otp4gb.config`` -- Configuration
+---------------------------------------
+"""
 import os
 import sys
 from yaml import safe_load

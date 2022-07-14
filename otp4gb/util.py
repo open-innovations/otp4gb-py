@@ -1,3 +1,8 @@
+"""
+``otp4gb.util`` -- Utilities
+---------------------------------------------
+"""
+
 import datetime
 import time
 
