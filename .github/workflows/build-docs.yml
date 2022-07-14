@@ -16,7 +16,7 @@ jobs:
         uses: ammaraskar/sphinx-action@master
         with:
           docs-folder: "docs/"
-          build-command: "make dirhtml"
+          build-command:  sphinx-build -b dirhtml docs build
 
       - name: Deploy
         uses: crazy-max/ghaction-github-pages@v2.0.1
